@@ -65,8 +65,12 @@
       -stopall          停止各个节点的客户端并去除crond守护
       -start START_ONE  启动一个指定节点的客户端并设置crond守护
       -stop STOP_ONE    停止一个指定节点的客户端并去除crond守护
+    
+    开启安装操作 python manager.py -install
+    开启运行 python manager.py -startall
 
     等一分钟就可以在 http://{server_ip}:{port} 看到各个客户端列表了。
+    注：port 指定的端口记得在服务器上开启。
 
 
 # 其他说明
