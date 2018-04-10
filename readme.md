@@ -68,6 +68,9 @@
     
     开启安装操作 python manager.py -install
     开启运行 python manager.py -startall
+    查看端口是否被监听 lsof -i:8081
+    出现类似下面的信息即可访问
+    python  7588 root    4u  IPv4  42008      0t0  TCP *:tproxy (LISTEN)
 
     等一分钟就可以在 http://{server_ip}:{port} 看到各个客户端列表了。
     注：port 指定的端口记得在服务器上开启。
